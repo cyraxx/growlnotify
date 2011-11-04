@@ -13,10 +13,10 @@ $VERSION = '42';
 );
 
 sub win_text {
-    my ($dest, $text, $stripped) = @_;
-    if ($dest->{level} & MSGLEVEL_HILIGHT) {
-	notify($dest->{target}. ": " .$stripped );
-    }
+	my ($dest, $text, $stripped) = @_;
+	if ($dest->{level} & MSGLEVEL_HILIGHT) {
+		notify($dest->{target}. ": " .$stripped );
+	}
 }
 
 sub win_hilight {

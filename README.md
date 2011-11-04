@@ -35,11 +35,13 @@ My solution is as simple as it gets without requiring Growl 3.0.
 
 How do I use it?
 ----------------
-1. Enable network connections in your Growl configuration and choose a password.
-2. Add a tunnel for port 9999 to your irssi SSH connection (-R 9999:127.0.0.1:9999). I recommend adding -q as well
+1. Ensure you have IO::Socket::INET on both your irssi host and your local host as well as Net::Growl on your local host
+(available via CPAN).
+2. Enable network connections in your Growl configuration and choose a password.
+3. Add a tunnel for port 9999 to your irssi SSH connection (-R 9999:127.0.0.1:9999). I recommend adding -q as well
 so it doesn't spam you with error messages if the local script isn't running.
-3. Add your Growl password to growlproxy.pl and start it in the background on your local machine.
-4. Put growlnotify.pl in your .irssi/scripts directory and load it into irssi.
+4. Add your Growl password to growlproxy.pl and start it in the background on your local machine.
+5. Put growlnotify.pl in your .irssi/scripts directory and load it into irssi.
 
 Known issues
 ------------

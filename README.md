@@ -28,10 +28,10 @@ local host via SSH for every notification. That just seemed excessive and way to
 
 Simply tunnelling the Growl port via SSH isn't possible out of the box because it uses UDP (in theory, it should
 be possible to send notifications via Growl's TCP port too, but I couldn't get that to work). There is a new protocol
-called GNTP that uses TCP, but it's only supported by Growl 3.0 which has gotten a lot of bad reviews so I'm
-still using 2.2.
+called GNTP that uses TCP, but it's only supported by Growl 1.3 which has gotten a lot of bad reviews so I'm
+still using 1.2.2.
 
-My solution is as simple as it gets without requiring Growl 3.0.
+My solution is as simple as it gets without requiring Growl 1.3.
 
 How do I use it?
 ----------------
